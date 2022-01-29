@@ -1,0 +1,13 @@
+CREATE TABLE topic(
+  id integer primary key autoincrement,
+  title VARCHAR(100) NOT NULL,
+  description TEXT NULL,
+  created DATETIME NOT NULL,
+  author VARCHAR(30) NULL,
+  profile VARCHAR(100) NULL
+)
+INSERT INTO topic(title, description, created, author, profile) VALUES('MySQL','MySQL is...',datetime('now'),'egoing','developer')
+INSERT INTO topic(title, description, created, author, profile) VALUES('ORACLE','ORACLE is...',datetime('now'),'egoing','developer')
+INSERT INTO topic(title, description, created, author, profile) VALUES('SQL Server','SQL Server is...',datetime('now'),'duru','database administrator')
+INSERT INTO topic(title, description, created, author, profile) VALUES('Postgre SQL','Posegre SQL is...',datetime('now'),'taego','data scientist, developer')
+INSERT INTO topic(title, description, created, author, profile) VALUES('MongoDB','MongoDB is...',datetime('now'),'egoing','developer')
